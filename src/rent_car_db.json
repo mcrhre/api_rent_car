@@ -1,0 +1,55 @@
+// bd rent_car
+
+//user
+[{
+  "_id": {
+    "$oid": "66032d9b5756a8b95754eabc"
+  },
+  "name": "Moacir Borborema",
+  "email": "moacir@rent.com",
+  "password": "123456",
+  "session" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDMyZDliNTc1NmE4Yjk1N…"
+}]
+
+/*------------------------------------------------*/
+
+//booking
+[{
+  "_id": {
+    "$oid": "660376e05756a8b95754ead5"
+  },
+  "start_date": {
+    "$date": "2022-03-22T10:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2022-03-23T10:00:00.000Z"
+  },
+  "status": true,
+  "start_place": "South City",
+  "end_place": "West City",
+  "id_car": {
+    "$oid": "66036d2b5756a8b95754eac4"
+  },
+  "id_user": {
+    "$oid": "66032d9b5756a8b95754eabc"
+  },
+  "amount": 200
+}]
+
+/*------------------------------------------------*/
+
+//car
+[{
+  "_id": {
+    "$oid": "66036d2b5756a8b95754eac4"
+  },
+  "model": "Corolla",
+  "year": 2022,
+  "color": "silver",
+  "rent_value": 200,
+  "path_photo": "app/assets/img/toyota.jpg",
+  "type": "sedan",
+  "transmission": "automatic",
+  "place": "South City",
+  "brand":"Toyota"
+}]
